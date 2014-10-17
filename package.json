@@ -26,15 +26,20 @@
     "test": "echo \"No tests\""
   },
   "dependencies": {
-    "slush": ">=1.0.0",
+    "assert": "^1.1.2",
+    "events": "^1.0.2",
     "gulp": "^3.6.2",
-    "gulp-template": "^0.1.1",
-    "gulp-install": "^0.1.4",
     "gulp-conflict": "^0.1.1",
+    "gulp-install": "^0.1.4",
+    "gulp-load-plugins": "^0.7.0",
     "gulp-rename": "^1.2.0",
-    "underscore.string": "^2.3.3",
+    "gulp-template": "^0.1.1",
+    "iniparser": "^1.0.5",
     "inquirer": "^0.4.1",
-    "iniparser": "^1.0.5"
+    "lodash": "^2.4.1",
+    "slush": ">=1.0.0",
+    "underscore.string": "^2.3.3",
+    "util": "^0.10.3"
   },
   "keywords": [
     "gulp",
