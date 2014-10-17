@@ -23,6 +23,7 @@ function startServer(){
 
 }
 function startWatch(){
+  gulp.watch('./client/app/**/*.css', $.livereload.changed);
   gulp.watch('./client/app/**/*.js', $.livereload.changed);
   gulp.watch('./client/**/*.html', $.livereload.changed);
 }
