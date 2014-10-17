@@ -9,7 +9,8 @@ var paths = {
   index: './client/index.html',
   root: './client',
   html: './client/**/*.html',
-  scripts: './client/app/**/*.js'
+  scripts: './client/app/**/*.js',
+  styles: './client/app/**/*.css'
 }
 
 gulp.task('default', $.sequence('inject', 'server', 'watch'));
@@ -27,12 +28,13 @@ function startWatch(){
 }
 
 function startInject(){
-  var target = gulp.src( paths.index );
-
+  var target  = gulp.src( paths.index );
   var scripts = gulp.src( paths.scripts, {read:false} );
+  var styles  = gulp.src( paths.styles, {read:false} );
 
   return target
     .pipe( $.inject( scripts,  {relative:true}) )
+    .pipe( $.inject( styles,  {relative:true}) )
     .pipe( gulp.dest( paths.root ) );
 }
 
