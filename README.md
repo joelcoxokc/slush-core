@@ -17,6 +17,7 @@
 
 ----------
 ####Generates the following
+```
 ├─ client
 │   ├ app
 │   │   ├ app.css
@@ -27,6 +28,7 @@
 ├─ gulpFile.js
 ├─ package.json
 └─ server.js
+```
 
 ## Getting Started
 
