@@ -1,0 +1,54 @@
+{
+  "name": "slush-core",
+  "description": "A Quick Generator for the FOUR major components you need to buid a project form the ground up. index.html, app.js, gulpFile.js, and server.js,",
+  "version": "0.1.0",
+  "homepage": "https://github.com/joelcoxokc/slush-slush-demo",
+  "author": "Joel Cox <joelcox@hisimagination.com>",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/joelcoxokc/slush-slush-demo.git"
+  },
+  "bugs": {
+    "url": "https://github.com/joelcoxokc/slush-slush-demo/issues"
+  },
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "https://github.com/joelcoxokc/slush-slush-demo/blob/master/LICENSE"
+    }
+  ],
+  "main": "slushfile.js",
+  "engines": {
+    "node": ">= 0.10.26",
+    "npm": ">=1.4.3"
+  },
+  "scripts": {
+    "test": "echo \"No tests\""
+  },
+  "dependencies": {
+    "slush": ">=1.0.0",
+    "gulp": "^3.6.2",
+    "gulp-template": "^0.1.1",
+    "gulp-install": "^0.1.4",
+    "gulp-conflict": "^0.1.1",
+    "gulp-rename": "^1.2.0",
+    "underscore.string": "^2.3.3",
+    "inquirer": "^0.4.1",
+    "iniparser": "^1.0.5"
+  },
+  "keywords": [
+    "gulp",
+    "slush",
+    "html",
+    "css",
+    "javascript",
+    "node",
+    "express",
+    "server",
+    "slushgenerator",
+    "express",
+    "livereload"
+  ],
+  "devDependencies": {},
+  "license": "ISC"
+}
