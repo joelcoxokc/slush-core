@@ -1,7 +1,7 @@
 {
   "name": "slush-core",
   "description": "A Quick Generator for the FOUR major components you need to buid a project form the ground up. index.html, app.js, gulpFile.js, and server.js,",
-  "version": "0.1.0",
+  "version": "1.0.2",
   "homepage": "https://github.com/joelcoxokc/slush-slush-demo",
   "author": "Joel Cox <joelcox@hisimagination.com>",
   "repository": {

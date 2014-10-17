@@ -1,14 +1,39 @@
-# slush-demo [![Build Status](https://secure.travis-ci.org/joelcoxokc/slush-slush-demo.png?branch=master)](https://travis-ci.org/joelcoxokc/slush-slush-demo) [![NPM version](https://badge-me.herokuapp.com/api/npm/slush-slush-demo.png)](http://badges.enytc.com/for/npm/slush-slush-demo)
+# slush-core
 
-> A Quick Generator for the FOUR major components you need to buid a project form the ground up. index.html, app.js, gulpFile.js, and server.js,
+> A Quick Generator for the FOUR core components you need to build a project form the ground up.
 
+#### Features
+
+  - Livereload.
+  - Gulp watch & inject css & js into html.
+  - Simple Express static server.
+
+## 4 Core Components
+1. index.html
+2. app.js
+3. server.js
+4. gulpFile.js
+
+
+----------
+####Generates the following
+├─ client
+│   ├ app
+│   │   ├ app.css
+│   │   └ app.js
+│   │
+│   └ index.html
+│
+├─ gulpFile.js
+├─ package.json
+└─ server.js
 
 ## Getting Started
 
-Install `slush-slush-demo` globally:
+Install `slush-core` globally:
 
 ```bash
-$ npm install -g slush-slush-demo
+$ npm install -g slush-core
 ```
 
 ### Usage
@@ -16,13 +41,13 @@ $ npm install -g slush-slush-demo
 Create a new folder for your project:
 
 ```bash
-$ mkdir my-slush-slush-demo
+$ mkdir core
 ```
 
 Run the generator from within the new folder:
 
 ```bash
-$ cd my-slush-slush-demo && slush slush-demo
+$ cd core && slush core
 ```
 
 ## Getting To Know Slush
@@ -40,7 +65,7 @@ See the [CONTRIBUTING Guidelines](https://github.com/joelcoxokc/slush-slush-demo
 ## Support
 If you have any problem or suggestion please open an issue [here](https://github.com/joelcoxokc/slush-slush-demo/issues).
 
-## License 
+## License
 
 The MIT License
 
