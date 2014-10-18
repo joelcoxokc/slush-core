@@ -22,6 +22,7 @@ function format(string) {
 var defaults = (function () {
   var homeDir = process.env.HOME || process.env.HOMEPATH || process.env.USERPROFILE,
     workingDirName = process.cwd().split('/').pop().split('\\').pop(),
+
     osUserName = homeDir && homeDir.split('/').pop() || 'root',
     configFile = homeDir + '/.gitconfig',
     user = {};
