@@ -1,6 +1,18 @@
+var inquirer = require('inquirer');
+var Storage = require('../config/storage.js');
+
+function Slushy(){
+  this.prompt = inquirer.prompt;
+  this.config = new Storage('Demo', './slush-y.json');
+  console.log(this)
+}
 
 
 module.exports = function(gulp, inquirer, _, $, defaults, Storage){
+
+  var slushy = new Slushy();
+  slushy.config.set('helllo');
+  console.log(slushy.config.get('helllo'));
 
   gulp.task('default', function (done){
     var prompts = [{
