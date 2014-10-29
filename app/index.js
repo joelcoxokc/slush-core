@@ -4,15 +4,15 @@ var Storage = require('../config/storage.js');
 function Slushy(){
   this.prompt = inquirer.prompt;
   this.config = new Storage('Demo', './slush-y.json');
-  console.log(this)
+  // console.log(this)
 }
 
 
 module.exports = function(gulp, inquirer, _, $, defaults, Storage){
 
   var slushy = new Slushy();
-  slushy.config.set('helllo');
-  console.log(slushy.config.get('helllo'));
+  // slushy.config.set('helllo');
+  // console.log(slushy.config.get('helllo'));
 
   gulp.task('default', function (done){
     var prompts = [{
@@ -50,21 +50,21 @@ module.exports = function(gulp, inquirer, _, $, defaults, Storage){
         }
         answers.appNameSlug = _.slugify(answers.appName);
 
-        var config = new Storage(answers.appName, './slush-y.json')
-        config.set('my', 'Hello');
-        // gulp.src(__dirname + '/../templates/**/*')
-        //   .pipe($.template( answers ))
-        //   .pipe($.rename(function (file) {
-        //     if (file.basename[0] === '_') {
-        //       file.basename = '.' + file.basename.slice(1);
-        //     }
-        //   }))
-        //   .pipe($.conflict('./'))
-        //   .pipe(gulp.dest('./'))
-        //   .pipe($.install())
-        //   .on('end', function () {
-        //     done();
-        //   });
+        // var config = new Storage(answers.appName, './slush-y.json')
+        // config.set('my', 'Hello');
+        gulp.src(__dirname + '/../templates/**/*')
+          .pipe($.template( answers ))
+          .pipe($.rename(function (file) {
+            if (file.basename[0] === '_') {
+              file.basename = '.' + file.basename.slice(1);
+            }
+          }))
+          .pipe($.conflict('./'))
+          .pipe(gulp.dest('./'))
+          .pipe($.install())
+          .on('end', function () {
+            done();
+          });
       });
   })
 }
